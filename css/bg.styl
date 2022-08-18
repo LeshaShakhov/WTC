@@ -1,0 +1,629 @@
+@import "variables.styl"
+@import "functions.styl"
+@import "helper.styl"
+
+
+.border-bot
+  position absolute
+  left 15px
+  right 15px
+  bottom 0
+  height 1px
+  border-bottom 1px solid bgGrey
+.l
+  background-image url("../img/line.png")
+  background-repeat no-repeat
+  background-position 0 0
+  background-size 100% auto
+  size(151px, 122px)
+.w
+  background-image url("../img/wave-line.png")
+  background-repeat no-repeat
+  background-position 0 0
+  background-size 100% auto
+  size(132px, 97px)
+.fish
+  background url("../img/fish.png") 0 0/100% auto no-repeat
+.lines
+  background-image url("../img/lines.png")
+  background-repeat no-repeat
+  background-position 0 0
+  background-size 100% auto
+.triangle
+  overflow hidden
+  position relative
+  .inner
+    size(100%, 110%)
+    background-color bgGrey
+.lines-2
+  background-image url("../img/lines-2.png")
+  background-repeat no-repeat
+  background-position 0 0
+  background-size 100% auto
+.lines-3
+  background-image url("../img/lines-3.png")
+  background-repeat no-repeat
+  background-position 0 0
+  background-size 100% auto
+.lines-4
+  background-image url("../img/lines-4.png")
+  background-repeat no-repeat
+  background-position 0 100%
+  background-size 100% auto
+.circle
+  border-radius 50%
+  &.yellow
+    background-color circleColor1
+  &.green
+    background-color circleColor2
+.screen-1
+  .l
+    absoluteAll(auto, auto, 16%, 10%)
+  .w
+    absolute(4.5%, 42%)
+  .fish
+    absolute(55.5%, 26px)
+    size(715px, 100%)
+    transform: rotate(-20deg);
+  .lines
+    size(425px, 300px)
+    absolute(15px, 0)
+  .triangle
+    size(500px, 500px)
+    absoluteAll(15px, auto, auto, 0)
+    .inner
+      absolute(-68%, 37%)
+      transform rotate(56deg)
+.screen-2
+  .circle
+    size(150px, 150px)
+    absoluteAll(auto, auto, 5.5%, 15%)
+  .w
+    absoluteAll(5.5%,auto, auto, 1%)
+  .lines
+    size(32%, 300px)
+    absoluteAll(auto, auto, 15px, 0)
+    transform rotate(180deg)
+  .triangle
+    size(500px, 500px)
+    absoluteAll(auto, 0, 15px, auto)
+    .inner
+      absoluteAll(auto, -40%, -79%, auto)
+      transform rotate(56deg)
+      width 125%
+.screen-3
+  .triangle
+    size(530px, 650px)
+    absoluteAll(auto, auto, 15px, 0)
+    .inner
+      absoluteAll(auto, 168px, -275px, auto)
+      transform rotate(39deg)
+      width 89%
+      position relative
+      img
+        position absolute
+        left 122px
+        top 338px
+        transform( translateX(-100%) rotate(-39deg) )
+        width 340px
+  .l
+    absolute(518px, 81px)
+  .circle
+    size(120px, 120px)
+    absoluteAll(auto, auto, 40.5%, 22%)
+  .w
+    absoluteAll(34.5%,auto, auto, 115px)
+  .lines-2
+    background-position: 0 100%;
+    size(29%, 300px)
+    absoluteAll(15px, auto, auto, 0)
+  .corner-fish
+    background-color bgGrey
+    size(40%, 550px)
+    absoluteAll(auto, auto, 15px, 0)
+.screen-4
+  .circle
+    &.yellow
+      size(150px, 150px)
+      absoluteAll(auto, -1.3%, 16%, auto)
+    &.green
+      size(150px, 150px)
+      absoluteAll(auto, 59%, -2%, auto)
+  .l
+    &.l-1
+      absoluteAll(auto,31% , 0, auto)
+    &.l-2
+      absoluteAll(auto,auto , 20%, 1.2%)
+  .w
+    &.w-2
+      absoluteAll(-0.5%,auto, auto, 31.5%)
+  .lines-3
+    size(31%, 320px)
+    absoluteAll(auto, 0, 15px, auto)
+  .triangle
+    size(500px, 500px)
+    absoluteAll(15px, auto, auto, 0)
+    .inner
+      absolute(-104%, 28%)
+      transform rotate(56deg)
+      width 125%
+.border-container-blue
+  .circle
+    size(150px, 150px)
+    absoluteAll(auto, -21.3%, 35%, auto)
+  .l
+    absolute(9%, 45%)
+  .w
+    absoluteAll(auto, auto, 25%, 5%)
+  .lines
+    size(37%, 300px)
+    absolute(0, 0)
+  .square
+    size(37%, 300px)
+    absoluteAll(auto, -115px, -166px, auto)
+    transform rotate(43deg)
+    background bgGrey
+  .line
+    &.head-line
+      width: calc(100% - 36px);
+.screen-5
+  .circle
+    &.yellow
+      size(120px, 120px)
+      absoluteAll(30.5%, 37%, auto, auto)
+    &.green
+      size(220px, 220px)
+      absoluteAll(-11%, 49%, auto, auto)
+  .l
+    absoluteAll(auto, 81.3%, 17%, auto)
+  .w
+    absoluteAll(3.5%,auto, auto, 12.5%)
+  .fish
+    absoluteAll(58%, -7%, auto, auto)
+    size(620px, 100%)
+    transform: rotate(57deg);
+  .lines
+    size(350px, 300px)
+    absoluteAll(auto, auto, 15px, 0)
+    transform rotate(180deg)
+.border-container-gray
+  .w
+    absoluteAll(auto,auto, 12%, 12.5%)
+  .lines-3
+    size(31%, 320px)
+    absoluteAll(auto, 0, 15px, auto)
+.screen-6
+  .lines-4
+    size(31%, 320px)
+    absoluteAll(0, auto, auto, 0)
+  .circle
+    &.yellow
+      size(200px, 200px)
+      absoluteAll(-5%, 10%, auto, auto)
+    &.green
+      size(150px, 150px)
+      absoluteAll(auto, 6%, 23%, auto)
+  .l
+    absoluteAll(auto, 3.3% , 17%, auto)
+  .w
+    absoluteAll(auto, auto, 2%, 20.5%)
+@media screen and (max-width: 991px)
+  .w
+    size(52px, 57px)
+  .l
+    size(91px, 91px)
+  .border-bot
+    left: 0;
+    right: 0;
+    &.mobile
+      left 0
+      top: 499px;
+  .screen-1
+    .circ-1
+      absoluteAll(auto, -60px, -110px, auto)
+      size(200px, 200px)
+      transform: rotate(-31deg);
+      img
+        width 100%
+    .circ-2
+      absoluteAll(10px, auto, auto, 370px)
+      size(70px, 70px)
+      transform: rotate(-31deg);
+      img
+        width 100%
+    .w
+      left: 36px;
+      top: 17.5%;
+    .lines
+      size(300px, 300px)
+      absolute(-90px, 0)
+      &.mobile
+        top 500px
+    .fish
+      absolute(92px, 44%)
+      width: 426px;
+      transform: rotate(-9deg);
+    .l
+      right: -3%;
+      bottom: 62%;
+      &.mobile
+        bottom 8%
+    .triangle
+      size(450px, 530px)
+      absoluteAll(0, -31px, auto, auto)
+      .inner
+        left: -404px;
+        top: 302px;
+      &.mobile
+        top: auto;
+        bottom 0
+  .screen-2
+    .w
+      left: 3.5%;
+      bottom: 15%;
+    .circle
+      size(100px, 100px)
+      right 17.5%
+      bottom 16%
+    .lines
+      width 330px
+      right 0
+    .triangle
+      left auto
+      right 0
+      .inner
+        right: -425px;
+        top: -450px;
+        transform: rotate(55deg);
+  .screen-3
+    .w
+      display none
+    .circle
+      right: auto;
+      bottom: 52%;
+      left: -15%;
+    .l
+      left: auto;
+      top: -0.5%;
+      right: 5%;
+    .lines-2
+      width 320px
+      left -185px
+    .triangle
+      right 0
+      width 273px
+      .inner
+        img
+          width 100px
+          left 36px
+          top 461px
+  .screen-4
+    .w
+      bottom 23%
+    .l
+      &.l-2
+        right: 10%;
+        bottom: 15.2%;
+    .lines-3
+      width 320px
+      right -95px
+    .triangle
+      left 0
+      .inner
+        left: -522px;
+        top: 252px;
+        transform: rotate(46deg);
+  .border-container-blue
+    .w
+      right: auto;
+      bottom: 26%;
+      left: 1%;
+    .l
+      top: 6%;
+    .square
+      width 400px
+      top: -213px;
+      right: -255px;
+  .screen-5
+    .w
+      left: auto;
+      bottom: 44.5%;
+      right: -10px;
+    .fish
+      absoluteAll(27%, auto, auto, -87.5%)
+      size(250px, 100%)
+      transform: rotate(-27deg);
+    .circle
+      &.green
+        width: 120px;
+        height: 120px;
+        left: auto;
+        top: 5%;
+        z-index: 20;
+        right: -15%;
+      &.yellow
+        display none
+    .l
+      top: 17.3%;
+      right: -19px;
+      bottom: auto;
+      z-index: 21;
+    .lines
+      width 300px
+      right -110px
+      bottom 0
+  .screen-6
+    .l
+      top: auto;
+      right: 4%;
+      bottom: 8%;
+    .w
+      right: 10%;
+      bottom: auto;
+      top: 5%;
+    .circle
+      &.mobile
+        size(130px, 130px)
+        left: auto;
+        top: -10%;
+        right: -10%;
+      &.green
+        size(130px, 130px)
+        top: 46%;
+        left: -28%;
+        right: auto;
+    .lines-4
+      width 300px
+      left -195px
+@media screen and (min-width: 992px) and (max-width: 1199px)
+  .navbar
+    .inner
+      width: 930px!important;
+  .screen-1
+    .first-conf
+      left: 24px!important;
+      bottom: 199px!important;
+    .w
+      left: 10.5%;
+      top: 36%;
+    .triangle
+      width: 700px;
+      .inner
+        left: -65%;
+        top: 20%;
+    .lines
+      width: 370px;
+    .fish
+      left: 56.5%;
+      top: 3%;
+      width: 600px;
+  .screen-2
+    .circle
+      bottom: 5%;
+    .w
+      bottom: 11%;
+  .screen-3
+    .triangle
+      width: 400px;
+    .l
+      left: 74%;
+      top: 0.5%;
+  .border-container-blue
+    .square
+      top: -176px;
+    .l
+      top: 19%;
+    .w
+      right: 13%;
+  .screen-5
+    .circle
+      &.green
+        left: -15%;
+    .adwise
+      width: 300px!important;
+    .l
+      top: 32.3%;
+    .fish
+      display none
+  .screen-6
+    .circle
+      &.green
+        right: 16%;
+@media screen and (min-width: 576px) and (max-width: 991px)
+  .w
+    size(105px, 90px)
+  .border-bot
+    left: 15px;
+    right: 15px;
+    &.mobile
+      left: 15px;
+      top: 896px;
+      right: 0;
+  .l
+    width: 120px;
+    height: 140px;
+  .screen-1
+    .circ-1
+      top: -70px;
+      right: -95px;
+      size(260px, 260px)
+    .circ-2
+      left: 30px;
+      bottom: 450px;
+      size(140px, 140px)
+    .triangle
+      size(620px, 620px)
+      left: 15px;
+      top: 277px;
+      .inner
+        left: -492px;
+        top: 237px
+    .l
+      right: 0%;
+      bottom: 6%;
+      &.mobile
+        bottom: auto;
+        top: 32%;
+    .lines
+      size(375px, 380px)
+      position: absolute;
+      left: 15px;
+      &.mobile
+        top: 897px;
+    .w
+      left: 85px;
+      top: 19.5%;
+    .fish
+      left: 187px;
+      top: 49%;
+      width: 782px;
+      transform: rotate(-11deg);
+  .screen-2
+    .lines
+      right: 15px;
+    .circle
+      right: 3.5%;
+      bottom: 13%;
+    .triangle
+      right 15px
+      .inner
+        right: -385px;
+        top: -360px;
+  .screen-3
+    .l
+      top: 1.5%;
+      right: 8%;
+    .circle
+      left: -5%;
+    .w
+      left: -9.5%;
+      bottom: 24.5%;
+    .triangle
+      width: 273px;
+      right: 15px;
+      .inner
+        top: 148px;
+        right: -185px;
+        img
+          width: 180px;
+          left: 66px;
+          top: 390px;
+    .lines-2
+      width: 310px;
+      left: 15px;
+  .screen-4
+    .lines-3
+      width: 380px;
+      right: 15px;
+    .circle
+      &.green
+        display none
+      &.yellow
+        top: 4.7%;
+        right: 26%;
+    .triangle
+      left 15px
+      .inner
+        left: -492px;
+        top: 202px;
+    .w
+      &.w-2
+        left: 4.5%;
+        bottom: 43.5%;
+        z-index: 20;
+    .l
+      &.l-1
+        display none
+      &.l-2
+        right: -2%;
+        bottom: 41.2%;
+  .border-container-blue
+    .square
+      top: -163px;
+      right: -205px;
+    .circle
+      top: -17.3%;
+    .l
+      top: 19%;
+      left 3%
+  .screen-5
+    .lines
+      width: 310px;
+      right: 15px;
+    .fish
+      left: 40%;
+      bottom: -89.5%;
+      width: 440px;
+    .circle
+      &.green
+        display none
+      &.yellow
+        display block
+        left: 80.5%;
+        top: 2%;
+    .l
+      top: 3.3%;
+    .w
+      bottom: 58.5%;
+  .screen-6
+    .circle
+      &.mobile
+        width: 150px;
+        height: 150px;
+        left: auto;
+        top: -3%;
+        right: -3%;
+      &.green
+        left: -8%;
+    .lines-4
+      left: -65px;
+@media screen and (min-width: 576px)  and (max-width: 767px)
+  .screen-1
+    .fish
+      left: 171px;
+      top: 51%;
+      width: 542px;
+  .screen-2
+    .w
+      bottom: 4%;
+    .lines
+      width: 250px;
+    .circle
+      bottom: 7%;
+  .screen-3
+    .triangle
+      .inner
+        top: 158px;
+        right: -265px;
+    .lines-2
+      width: 260px;
+  .screen-4
+    .lines-3
+      width: 250px;
+    .circle
+      &.yellow
+        top: 2.7%;
+        right: 8%;
+    .w
+      &.w-2
+        left: 19.5%;
+        bottom: 66.5%;
+    .l
+      &.l-2
+        bottom: 47.2%;
+  .border-container-blue
+    .square
+      right: -255px;
+    .lines
+      width: 320px;
+      left: -130px;
+    .circle
+      top: -18.3%;
+      size(120px, 120px)
+    .l
+      top: 11%;
+  .screen-5
+    .fish
+      left: 27%;
+      bottom: -86.5%;
+      width: 340px;

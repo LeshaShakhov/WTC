@@ -1,0 +1,228 @@
+@import "variables.styl"
+@import "functions.styl"
+@import "helper.styl"
+
+body
+  font-family: 'Arimo', sans-serif;
+  color txtBlack
+  background-color transparent
+  font-size middleText
+.js-section-selectTickets
+  display none
+.b-registration__section_no-bottom-space
+  justify-content center
+  p
+    background-color: #f0beb2;
+    padding: 1.06rem 1.3rem;
+    border 1px solid txtRed
+.b-error, .js-pro-widget-terms-popup
+  background-color: #d44621;
+  color: #fff;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+.js-pro-widget-terms-popup
+  text-align center
+.custom-checkbox
+  padding 0 10px
+.radio-row
+  .b-error-block
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    box-sizing: border-box;
+    padding: 0 15px;
+.header
+  margin-bottom: 50px;
+  h2
+    font-size header
+    font-weight bold
+  p, span
+    font-size middleText
+.success
+  color txtBlack
+  margin-bottom: 15px;
+  .row-fluid
+    margin-bottom 30px
+  a
+    color txtRed
+    &:hover
+      text-decoration none
+      color #FF4E12
+  p, span
+    font-size middleText
+  h5
+    display none
+  .span2
+    font-weight bold
+form
+  z-index 80
+  .b-pro-widget__terms-popup.b-pro-widget__terms-popup_hidden
+    display none
+  .form-group
+    margin-bottom: 2.05rem;
+  input[type="text"],input[type="email"], input[type="number"], input[type="tel"]
+    border 1px solid #000
+    border-radius 0
+    font-size middleText
+    padding: 1.06rem 1.3rem;
+    height: auto;
+    background-color: transparent;
+    &::-webkit-input-placeholder
+      color: placeholderGrey;
+    &:-ms-input-placeholder
+      color: placeholderGrey;
+    &::placeholder
+      color: placeholderGrey;
+    &:focus
+      border-color: #000;
+      outline: 0;
+      box-shadow: none;
+  .radio-row
+    margin-bottom 27px
+  .form-radio
+    margin-bottom: 27px;
+    &:last-child
+      margin-bottom 2px
+  .radio
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  .radio + label
+    position: relative;
+    padding: 0 0 0 40px;
+    cursor: pointer;
+  .radio + label:before
+    content: ''
+    absolute(0, -2px)
+    size(31px, 31px)
+    border: 2px solid txtBlack;
+  .radio + label:after
+    content: "";
+    display: inline-block;
+    absolute(11px, 2px)
+    size(9px, 18px)
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(45deg);
+  .radio + label::after
+    content: none;
+  .radio:checked + label:after
+    content: "";
+.text-row
+  line-height 1.5rem
+  margin-top -7px
+  margin-bottom: 20px;
+.reg-btn
+  text-transform uppercase
+  font-weight bold
+  font-size middleText
+  letter-spacing 0.07rem
+  border: 2px solid txtBlue;
+  background none
+  color txtRed
+  padding: 0.3rem 1.1rem;
+  transition background-color 0.3s, color 0.3s
+  &:disabled
+    color placeholderGrey
+    border: 2px solid placeholderGrey;
+  &:hover:enabled
+    background-color txtBlue
+    color #fff
+@media screen and (max-width: 515px)
+  .custom-checkbox
+    padding 0 15px
+  .header
+    margin-bottom: 15px;
+    h2
+      font-size: 1.3rem;
+    p, span
+      font-size 0.875rem
+  .success
+    margin-bottom: 0px;
+    p, span
+      font-size0.875rem
+  body
+    font-size 0.725rem
+  .radio-row
+    .b-error-block
+      flex: 0 0 100%;
+      max-width: 100%;
+  .b-error
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  form
+    .radio + label
+      padding: 0 0 0 25px;
+      font-size 0.625rem
+    .form-radio
+      margin-bottom 5px
+    .radio + label:before
+      size(20px, 20px)
+      border: 1px solid #111;
+    .radio + label:after
+      size(6px, 10px)
+      left 7px
+    .form-group
+      margin-bottom 1rem
+    input[type="text"],input[type="email"], input[type="number"], input[type="tel"]
+      font-size 0.725rem
+      padding 0.7rem
+      left 7px
+      top 2px
+    .radio-row
+      margin-bottom 15px
+  .text-row
+    margin-bottom: 0;
+    margin-top: 0;
+  .reg-btn
+    border: 1px solid blue;
+    font-size: 0.9rem;
+    &:disabled
+      border: 1px solid placeholderGrey;
+@media screen and (width: 390px)
+  .reg-btn
+    font-size: 1.5rem !important;
+    line-height: 1.5rem !important;
+    border: 2px solid #00f;
+    padding: 0.5rem 1.1rem;
+    &:disabled
+      border:2px solid placeholderGrey;
+  form
+    .radio-row
+      margin-bottom 15px
+@media screen and (width: 570px)
+  body
+    font-size: 1rem;
+  .custom-checkbox
+    padding: 0 15px;
+  .radio-row
+    .b-error-block
+      flex: 0 0 100%;
+      max-width: 100%;
+  .reg-btn
+    padding: 0.65rem 0.8rem;
+    font-size: 1.9rem!important
+    line-height: 1.9rem!important
+    border: 2px solid #00f;
+    &:disabled
+      border: 2px solid placeholderGrey;
+  form
+    .form-radio
+      margin-bottom: 10px;
+    input[type="text"],input[type="email"], input[type="number"], input[type="tel"]
+      font-size: 1rem;
+      padding: 0.9rem;
+    .radio + label
+      font-size 1rem
+      padding: 0 0 0 40px;
+    .radio + label:before
+      size(30px, 30px)
+      border: 2px solid #111;
+    .radio + label:after
+      width: 9px;
+      height: 16px;
+    .radio-row
+      margin-bottom 15px
+  .text-row
+    margin-bottom: 10px;

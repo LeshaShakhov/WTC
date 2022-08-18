@@ -1,0 +1,722 @@
+@import "variables.styl"
+@import "functions.styl"
+@import "helper.styl"
+
+@media screen and (max-width: 991px)
+  .mobile
+    display block
+  .desktop
+    display none
+  .close-menu
+    border-radius 50%
+    border 2px solid #fff
+    absolute(15px, 15px)
+    size(40px, 40px)
+    background url("../img/close.svg") 50% 50%/cover no-repeat
+    display none
+  h2
+    font-size 1.4rem
+  h4
+    font-size 0.6rem
+    line-height 0.8rem
+  body
+    padding-top 30px
+  a
+    font-size 0.625rem
+  .container
+    padding-top 20px
+  .middle-text
+    font-size 0.6rem
+    line-height 0.8rem
+  .header
+    font-size 0.9rem
+  .small-text
+    font-size 0.875rem
+    line-height 1rem
+  .extra-small
+    font-size 0.45rem
+  .reg-btn
+    border: 1px solid blue;
+    font-size: 0.9rem;
+  .date
+    width: 47px
+  .navbar-expand-lg
+    .d-flex
+      padding-top 0
+  .logo
+    width 35px
+    margin-top 2px
+  .fb
+    margin-bottom: 4px;
+    img
+      width: 14px;
+  .mob-reg
+    padding: 0 12px;
+    border: 1px solid #fbb900;
+    height 15px
+    margin-right: -55px;
+    margin-top: 6px;
+    displayFlex(row, center, center)
+    a
+      font-size 0.5rem
+      color #fbb900
+      padding-top: 0
+  .carousel-control-prev
+    left 0
+    opacity 1
+  .carousel-control-next
+    right 0
+    opacity 1
+  .carousel-control-prev-icon, .carousel-control-next-icon
+    background-image url("../img/carousel-arrow.svg")
+    width: 35px;
+    height: 35px;
+    size(35px, 35px)
+    position absolute
+    top 15%
+  .carousel-control-prev-icon
+    left 0
+  .carousel-control-next-icon
+    transform rotate(180deg)
+    right 0
+  .navbar
+    height 30px
+    .navbar-toggler
+      margin: 0;
+      z-index 100
+      box-sizing border-box
+      color #fff
+      font-size 0.5rem
+      margin-left: -10px;
+      &:focus
+        text-decoration none
+        outline none
+      &.hide
+        display none
+      div
+        height 100%
+        displayFlex(row, center, center)
+      .border-arrow
+        border: 4px solid transparent; border-top: 4px solid #fff;
+    .navbar-collapse
+      display none
+      height 100vh
+      absoluteAll(0, 0, 0, 0)
+      background-color txtBlack
+      z-index 90
+      .reg-btn
+        border: 1px solid #fff;
+        font-size: 0.9rem;
+        padding: 0.6rem 0.7rem;
+        color txtRed
+      .btn-row
+        .col-lg-12
+          margin-bottom 10px
+      .small-text
+        font-size: 0.7rem;
+        color #fff
+    .slide-togle-container
+      display none
+    .navbar-nav
+      background txtBlack
+      margin-bottom: 45px;
+      margin-top 5%
+      display none
+      .nav-item
+        text-align center
+        margin-bottom 8%
+        .nav-link
+          font-size 1.5rem
+    .btn-row
+      display none
+  .line
+    &.head-line
+      width 100%
+    &.sub-line
+      width 100%
+  .screen-1
+    .blue
+      font-size 0.7rem
+    .change
+      margin-top: 0px;
+      margin-left: -4px;
+      margin-bottom 580px
+      img
+        width: 85%;
+        max-width 320px
+    .powerd
+      top: 420px;
+      right: 17px;
+      bottom: auto;
+      width: 90px;
+      div
+        margin-bottom: 2px;
+        font-size: 0.6rem;
+    .intro
+      margin-bottom 40px
+      p
+        font-size 0.8rem
+        line-height 1.2rem
+      .first-col
+        padding-right: 13px;
+        padding-left: 135px;
+        margin-bottom: 15px;
+      .second-col
+        padding-right: 13px;
+        padding-left: 135px;
+    .first-conf
+      left: 73px;
+      top: 333px
+      bottom: auto;
+      width: 220px;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    .change
+      .text-right
+        text-align left!important
+        img
+          width 67%
+          margin-left -11%
+    .container
+      padding-top 7px
+    .text-right
+      line-height 0.9rem
+    a
+      font-size 0.9rem
+  .screen-2
+    .blue
+      font-size 0.7rem
+    .container
+      padding-bottom 28px
+    .sub-head-row
+      margin-bottom: 70px;
+      h3
+        transform: rotate(-34deg);
+        padding-left 0
+        margin-bottom: 0.2rem;
+      .col-lg-6
+        padding-right 0
+    .small-text
+      line-height 1rem
+      margin-bottom 0.8rem
+    .num-row
+      margin-bottom 15px
+      .custom-col
+        margin-bottom: 7px;
+        width 100%
+        height auto
+        padding: 5px 0;
+        .middle-text
+          width 110px
+          line-height 0.8rem
+        .d-flex
+          justify-content center
+        p
+          margin-bottom 0.2rem
+    .text-row
+      margin-bottom 55px
+      .custom-col
+        width 100%
+    .big-num
+      font-size 3rem
+      line-height 3rem
+    .head-row
+      h2
+        padding-right 20%
+  .screen-3
+    .container
+      padding-bottom 37px
+    .head-row
+      margin-bottom: 15px;
+    .program-row
+      margin-bottom 35px
+      .col-lg-6
+        margin-bottom 15px
+    .program
+      h3
+        margin-bottom 5px
+      h6
+        font-size 0.7rem
+        line-height 1rem
+      div
+        padding-right 0
+        margin-bottom 10px
+        img
+          width 18px
+      p
+        font-size 0.675rem
+        line-height 1rem
+    .expand-btn
+      margin-bottom: 10px;
+      padding-right 0
+      a
+        padding 0 4px
+        line-height 1.2rem
+      img
+        width 20px
+        margin-bottom: 2px;
+        margin-left: 3px;
+        margin-right: 3px;
+  .screen-4
+    .head-row
+      margin-bottom: 60px;
+    .carousel-inner
+      justify-content center
+      overflow: hidden;
+      height 320px
+      width 320px
+    .speaker
+      absolute(0, 0)
+      margin-right 0
+      margin-bottom 0
+      flex-basis auto
+      min-width: 320px
+      max-width 320px
+      displayFlex(column, center, flex-start)
+      .post
+        margin-bottom 5px
+        width 100%
+      img
+        margin-bottom 20px
+      .name-wrap
+        font-size 0
+        width 100%
+        background-color selectBlue
+      .bio
+        width 100%
+      .name
+        margin-bottom 0
+        &:first-child
+          padding-right 0
+  .border-container-blue
+    .container
+      border: 15px solid #00f;
+      padding-bottom 35px
+    .head-row
+      margin-bottom: 10px;
+      .line
+        &.head-line
+          width: 100%;
+          padding-right: 50%;
+    .small-text
+      line-height 1rem
+      font-size 0.875rem
+    .text-row, .data-row
+      width: 83%;
+      margin: 0 auto 15px auto;
+      font-size 0.75rem
+      line-height 1rem
+      h4
+        font-size 1rem
+  .screen-5
+    .container
+      padding-bottom 45px
+    .head-row
+      margin-bottom: 10px;
+      padding-right: 15%;
+    .org-row
+      margin-bottom: 15px;
+    .social-row
+      margin-bottom 35px
+      div
+        padding-left: 5%;
+      img
+        width 35px
+    .partners-wrap
+      width: 300px;
+    .partner-row
+      margin-bottom 15px
+      padding-left: 48px;
+      .partner-logo
+        height 30px
+      h4
+        line-height 1rem
+    .partner-wrap
+      width: 315px;
+    .main-partner
+      width 280px
+      img
+        width 58%
+    .pr-partner
+      img
+        width 36%
+    .scan
+      width 165px
+      img
+        margin-top: 4px;
+        width: 50px;
+    .macs
+      width 265px
+      img
+        width: 110px;
+        margin-top: 1%;
+    .rma
+      width 110px
+      img
+        width 55px
+    .info-partners
+      margin-bottom 0
+      margin-bottom 15px
+      padding-left 0
+    .dop-row
+      padding-left 0
+      margin-bottom 40px
+    .alpina
+      width: 90px;
+    .k-water
+      width 80px
+    .secret
+      width 100px
+  .screen-6
+    .container
+      padding-bottom: 17px;
+      border: 15px solid #00f;
+    h2
+      padding-right: 40%;
+    .head-row
+      margin-bottom 10px
+    .legal-row
+      padding: 0;
+      .legal
+        font-size 0.55rem
+  .location
+    margin-bottom 5px
+    h2
+      padding-right 40%
+    .col-logo
+      margin-bottom 0
+    .col-text
+      padding-top: 7px;
+      padding-left: 0;
+#map
+  height 300px
+@media screen and (min-width: 992px) and (max-width: 1199px)
+  .middle-text
+    font-size 0.8rem
+  .blue-bg
+    height 150px
+  .screen-1
+    .intro
+      margin-bottom: 75px;
+  .screen-2
+    .custom-col
+      width 100%
+    .big-num
+      font-size: 5em;
+      line-height: 6rem;
+    .middle-text
+      width 160px
+      line-height: 1.2rem;
+  .screen-3 .expand-btn
+    padding-right 5%
+@media screen and (min-width: 576px) and (max-width: 991px)
+  h2
+    font-size 3rem
+    line-height 3.1rem
+  h4
+    font-size 1.1rem
+    line-height 1.5rem
+  body
+    padding-top: 60px;
+  a
+    font-size 1.2rem
+  .close-menu
+    left: 35px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+  .container
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  .middle-text
+    font-size 1rem
+    line-height 1.5rem
+  .header
+    font-size 1.2rem
+  .small-text
+    line-height: 1.5rem;
+    font-size: 1rem;
+  .extra-small
+    font-size 0.65rem
+  .carousel-control-prev
+    left calc((100% - 450px)/2 + 15px)
+  .carousel-control-next
+    right calc((100% - 450px)/2 + 15px)
+  .mob-reg
+    padding: 0 25px;
+    border: 2px solid #fbb900;
+    height: 30px;
+    margin-top: 14px;
+    margin-right: -133px;
+    a
+      font-size 1rem
+      padding-top: 1px;
+  .date
+    width: 98px;
+    margin-left: 16px;
+    margin-top: 12px;
+  .fb
+    margin-bottom: 0;
+    margin-top: 16px;
+    img
+      width: 28px;
+  .navbar
+    height 60px
+    .inner
+      width: 656px;
+    .navbar-toggler
+      font-size 1rem
+      padding: 22px 0;
+      .border-arrow
+        padding-top 4px
+  .logo
+    width: 65px;
+    margin-top 0
+    padding-top 12px
+  .reg-btn
+    font-size: 1.9rem!important
+    line-height: 1.9rem!important
+    border: 2px solid #00f;
+  .screen-1
+    .powerd
+      top: 728px;
+      right: 30px;
+      width: 173px;
+      div
+        margin-bottom: 10px;
+        font-size: 1rem;
+    .blue
+      font-size: 0.9rem;
+    .container
+      padding-left 15px
+      padding-right 15px
+    .intro
+      margin-bottom: 130px;
+      p
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      .first-col
+        padding-left: 315px;
+        padding-right: 100px;
+      .second-col
+        padding-left: 315px;
+        padding-right: 100px;
+    .change
+      margin-bottom: 840px;
+      margin-top: -31px;
+      img
+        width: 78%;
+        max-width: none;
+        margin-left: 45px;
+      .text-right
+        img
+          width: 61%;
+          margin-left: -7%;
+    .first-conf
+      font-size: 2.4rem;
+      line-height: 3.8rem;
+      left: 155px;
+      top: 607px;
+    a
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      padding-left: 35px;
+  .screen-2
+    .blue
+      font-size: 0.9rem;
+    .sub-head-row
+      margin-bottom 62px
+      h3
+        transform: rotate(0);
+        padding-left 0
+        margin-bottom: 0.5rem;
+      h4
+        transform: rotate(0);
+        padding-right 0
+      .col-xlg6
+        padding-right 0
+        div
+          width: 390px
+    .num-row
+      .custom-col
+        margin-bottom: 25px;
+        .middle-text
+          width: 140px;
+          line-height 1.5rem
+    .big-num
+      font-size: 6rem;
+      line-height: 7rem;
+    .head-row
+      h2
+        padding-right: 30%;
+  .screen-3
+    .program-row
+      margin-bottom: 100px;
+    .head-row
+      margin-bottom 25px
+    .expand-btn
+      margin-bottom 20px
+      a
+        padding: 0 10px;
+        line-height: 2.2rem;
+      img
+        width: 30px;
+        margin-bottom: -2px;
+    .program
+      div
+        margin-bottom 25px
+      h3
+        margin-bottom: 25px;
+      h6
+        font-size: 1rem;
+        line-height 1.5rem
+        margin-bottom 5px
+      p
+        font-size 0.8rem
+  .screen-4
+    .carousel-inner
+      height 450px
+      width 450px
+    .speaker
+      min-width: 450px;
+      max-width: 450px;
+      img
+        margin-bottom: 35px;
+        width: 40%;
+      .name
+        font-size 2rem
+        line-height 2.2rem
+        padding 0 10px
+      .bio
+        font-size 1rem
+      .post
+        font-size 1rem
+  .border-container-blue
+    .container
+      border: 25px solid #00f;
+      padding-bottom: 67px;
+    .text-row, .data-row
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 0 auto 40px auto;
+      h4
+        font-size 1.2rem
+  .screen-5
+    .partner-wrap
+      width: 655px;
+    .pr-partner
+      img
+        width: 46%;
+        margin-top: -8px;
+    .adwise
+      width: 400px;
+    .rma
+      width 95px
+      img
+        width: 90px;
+    .social-row
+      img
+        width: 55px;
+    .scan
+      width 110px
+      img
+        margin-top: 16px;
+        width: 78px;
+    .macs
+      width 185px
+      img
+        margin-left: 17px;
+        width 130px
+    .alpina
+      width 130px
+    .k-water
+      width 130px
+    .secret
+      width 150px
+    .partners-wrap
+      width: 530px;
+    .head-row
+      margin-bottom: 40px;
+    .partner-row
+      h4
+        line-height 1.5rem
+      .partner-logo
+        height: 80px;
+    .main-partner
+      img
+        width 80%
+    .info-partners
+      margin-bottom: 15px;
+    .dop-row
+      margin-bottom: 110px;
+  .screen-6
+    .container
+      border: 25px solid #00f;
+      padding-bottom: 67px;
+    .head-row
+      margin-bottom: 40px;
+    .legal-row
+      padding: 0 30px;
+      .legal
+        font-size 0.75rem
+  .location
+    margin-bottom: 5px;
+    .container
+      padding-bottom: 50px;
+    .head-row
+      margin-bottom: 38px;
+    .location-logo
+      width: 85px;
+@media screen and (min-width: 576px)  and (max-width: 767px)
+  .mob-reg
+    margin-right: -52px;
+  h2
+    font-size: 2rem;
+    line-height: 2.1rem;
+  .navbar
+    .inner
+      width: 476px;
+  .screen-1
+    .powerd
+      top: 698px;
+    .first-conf
+      left: 85px;
+      top: 527px;
+    .intro
+      .first-col, .second-col
+        padding-left: 190px;
+        padding-right: 100px;
+  .screen-2 .sub-head-row .col-lg-6
+    padding-right 15px
+  .reg-btn
+    font-size: 1.5rem !important;
+    line-height: 1.5rem !important;
+    .partner-row
+      .partner-logo
+        height: 60px;
+  .screen-6 .legal-row
+    padding 0
+  .border-container-blue .text-row, .border-container-blue .data-row
+    margin: 0 auto 20px auto;
+@media screen and (max-width: 575px) and (orientation: portrait)
+  .screen-2
+    .header
+      font-size 0.8rem
+      letter-spacing -0.04rem
+@media screen and (max-width: 359px)
+  .fb
+    margin-left: 25px;
+  .navbar .navbar-nav
+    margin-bottom: 0;
+    margin-top: 15%;
+@media screen and (max-height: 375px) and (orientation: landscape)
+  .nav-link
+    padding-top 0.2rem
+    padding-bottom 0.2rem
+  .navbar
+    .navbar-nav
+      margin-bottom: 20px;
+      margin-top: -1%;
+      .nav-item
+        margin-bottom: 0;
